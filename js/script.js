@@ -8,16 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Compute accordingly and display converted temperature
   // Change background color according to hot or cold.
   document.getElementById("submit").addEventListener("click", function () {
-    // console.log("submit button clicked");
     var inputVal = document.getElementById("tempInput").value;
     if (unitSelected() === "fahrenheit") {
-      // console.log("detected Fahrenheit input");
       var outputVal = Math.round( (5/9) * (inputVal - 32) );
       document.getElementById("tempDisplay").innerHTML = outputVal + "°C";
       setBackgroundColor(inputVal, unitSelected());
     }
     else if (unitSelected() === "celsius") {
-      // console.log("detected Celius input");
       var outputVal = Math.round( (9/5 * inputVal) + 32 );
       document.getElementById("tempDisplay").innerHTML = outputVal + "°F";
       setBackgroundColor(inputVal, unitSelected());
@@ -27,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // When CLEAR button is clicked
   // Reset input field value to nothing, and reset displayed temperature.
   document.getElementById("clear").addEventListener("click", function () {
-    // console.log("clear button clicked");
     document.getElementById("tempInput").value = "";
     document.getElementById("tempDisplay").innerHTML = "0°C";
     document.getElementById("tempDisplay").className = "";
