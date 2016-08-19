@@ -1,3 +1,6 @@
+body {
+  font-family: 'Indie Flower', cursive;
+}
 h1 {
   color: black;
   font-size: 3em;
@@ -11,9 +14,12 @@ button {
   margin: 0 3px 0 3px;
   border-radius: 5px;
   border: solid black 1px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1em;
 }
 input#tempInput {
   text-align: center;
+  font-family: 'Indie Flower', cursive;
   font-size: 2.5em;
   width: 90%;
   height: 50px;
@@ -25,17 +31,14 @@ label {
   margin-right: 4px;
   font-size: 1.4em;
 }
+a {
+  text-decoration: none;
+}
 
 .container {
   margin: 70px auto 0 auto;
   width: 600px;
   text-align: center;
-}
-#tempDisplay {
-  /*background-color: grey;*/
-  border-radius: 4px;
-  line-height: 200px;
-  font-size: 3em;
 }
 .coldColor {
   background-color: lightblue;
@@ -44,13 +47,15 @@ label {
   background-color: orange;
 }
 
+#tempDisplay {
+  /*background-color: grey;*/
+  border-radius: 4px;
+  line-height: 200px;
+  font-size: 3em;
+}
 #buttons {
-
 }
 #submit {
-
 }
-
 #tempInput {
-
 }
